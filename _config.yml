@@ -1,6 +1,6 @@
 #
 # This file contains configuration flags to customize your site
-#
+# Adding a line to force a rebuild
 
 # Name of your site (displayed in the header)
 name: Your Name
