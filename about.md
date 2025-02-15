@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm writing code, primarily in backend and infrastructure as a software engineer.
 
-### More Information
+I'm writing a television script about the coop I lived in college, the Domes.
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
+# Contact me
 
 [email@domain.com](mailto:email@domain.com)
+760 953 2322
+
+## In Depth
+
+[Here's 50 things about me!](https://christophersalam.com/fifty)

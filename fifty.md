@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: page
 title: 50 things about myself
+permalink: /fifty/
 ---
+
 
 ## 1.0 I am relatively static.
 ###### 1.1 my life has little that is interesting on a day to day basis.
