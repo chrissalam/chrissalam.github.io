@@ -9,4 +9,4 @@ I'm also about to embark upon a new chapter in my life, I've been unemployed and
 
 This is one of the many coding bootcamps emerging in the Bay Area, but what makes mine different is that the school is most interested in training students who identify as people of color. I'm thrilled at having this opportunity, and I've already met people whom I know will be great lifelong friends and collegues. I'll be blogging here about things I learn about coding and general observations about software, engineering, building applications that harness my expertises, and my involvement in the development of a more representative workforce. Thanks for reading!
 
-![Me in 2016](./chrissalam.jpg)
+![image tooltip here](/images/404.jpg)

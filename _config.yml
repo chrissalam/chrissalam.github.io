@@ -3,20 +3,17 @@
 # Adding a line to force a rebuild
 
 # Name of your site (displayed in the header)
-name: Chris Salam!
+name: Christopher Salam
 
 # Short bio or description (displayed in the header)
-description: writing code and television.
+description: :writing code and television
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/chrissalam
 
 theme: jekyll-theme-minimal
 
-#
 # Flags below are optional
-#
-
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
