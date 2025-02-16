@@ -8,6 +8,8 @@ I'm writing code, primarily in backend and infrastructure as a software engineer
 
 I'm writing a television script about the coop I lived in college, the Domes.
 
+I once was a party bus owner / driver.
+
 # Contact me
 
 [email@domain.com](mailto:email@domain.com)
