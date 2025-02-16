@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a King's Tour
+title: a king's tour
 ---
 
 So I recently got this one at a company I was ok not working at. The interview shows me 2 3 x 3 arrays with numbers 0-9, and a 3rd 3 x 3 array, this one numbered 4-12. The goal with this problem is when given the path of a king on a chessboard, is this a valid route where the king travels through each square on the board sequentially. 

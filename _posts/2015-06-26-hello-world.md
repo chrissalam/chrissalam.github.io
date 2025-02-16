@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World
+title: hello world
 ---
 
 I'm very excited to get this blog up and running and write my first post! Today is an important day in our country, gay marriage was declared legal all over our country, by the U.S. supreme court. As someone with many LGBTQ friends and some family, I feel a deep connection and am proud that our country will allow any two kinds of people to receive the over 1,000 benefits that marriage bestows.
