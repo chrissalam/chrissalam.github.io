@@ -128,7 +128,3 @@ for (let i = s.length - 1; i >= 0; i--) {
 
 console.log(count) // -> 2
 ```
-
-{:refdef: style="text-align: center;"}
-![Sample King's Tours](/images/dsa/kingstour.png)
-{: refdef}
