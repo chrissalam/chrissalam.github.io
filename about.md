@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
 
@@ -10,11 +10,11 @@ I'm writing a television script about the coop I lived in college, the Domes.
 
 I once was a party bus owner / driver.
 
-# Contact me
+# contact me
 
-[email@domain.com](mailto:email@domain.com)
+[christopher.salam@gmail.com](mailto:christopher.salam@gmail.com)
 760 953 2322
 
-## In Depth
+## in depth
 
 [Here's 50 things about me!](https://christophersalam.com/fifty)
