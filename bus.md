@@ -4,6 +4,8 @@ title: bus
 permalink: /bus/
 ---
 
+I once was a party bus owner / driver.
+
 The two best days in a mechanic's life: 
 * The day they buy a bus. 
 * The day they sell that bus.
