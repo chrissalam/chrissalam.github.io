@@ -19,7 +19,7 @@ The much more common problem on the internet is the path of the knight.
 
 Seeing this image really helped me visualize the legal moves for the knight as coordinate tuples. For Example, the knight is 
 
-```
+```python
 LEGAL_MOVES: list[tuple(int, int)] = 
 [(2,1),(-2,1),(2,-1),(-2,-1),(1,2),(-1,2),(1,-2),(-1,-2)]
 ```
@@ -29,7 +29,7 @@ That's a different problem! King's even easier.
 ![The reach of the king](/images/dsa/king.png)
 {: refdef}
 
-```
+```python
 LEGAL_MOVES: list[tuple(int, int)] = 
 [(1,1),(-1,1),(1,-1),(-1,-1),(1,1),(-1,1),(1,-1),(-1,-1)]
 ```
@@ -37,7 +37,7 @@ LEGAL_MOVES: list[tuple(int, int)] =
 During the interview I pursued this as a if / else tree, which is terrible. A better way to do it I found afterwards.
 This is going to show a structure that confused me initially.
 
-```
+```python
 names = ['King', 'Queen', 'Joker']
 any(n in 'King and john' for n in names) # -> True
 all(n in 'King and Queen' for n in names) # -> False
@@ -45,7 +45,7 @@ all(n in 'King and Queen' for n in names) # -> False
 
 This structure is another way of saying:
 
-```
+```python
 # any(n in 'King and john' for n in names)
 
 for n in names:
@@ -57,13 +57,13 @@ for n in names:
 
 So from this we will take 
 
-```
+```python
 # any( ~recurse through 8 directions ~ for dx, dy in LEGAL_MOVES)
 ```
 
 This psuedocode eventually looks like 
 
-```
+```python
 any(is_valid(grid, x + dx, y + dy, expected_pos + 1) for dx, dy in LEGAL_MOVES)
 ```
 
@@ -71,7 +71,7 @@ So since we know this is recursive, that means is_valid is going to get called m
 
 So we need to start at the starting point. Then we need to travel to each legal move, and then you need to bounce if you are off the board or the next value isn't exactly n + 1.
 
-```
+```python
 # Dead Ends!
 if x >= len(grid) or y >= len(grid[0]) or x < 0 or y < 0 or grid[x][y] != expected_pos:
     return False
@@ -79,20 +79,20 @@ if x >= len(grid) or y >= len(grid[0]) or x < 0 or y < 0 or grid[x][y] != expect
 
 The case for the True case is easy enough, calculate from the board provided (the knight's case definitely needs like a 5 x 5 or 6 x 6 board)
 
-```
+```python
 if expected_pos == len(grid) * len(grid[0]) - 1:
     return True
 ```
 
 The last piece is understanding all these pieces coming together with the arguments and the recursive call. 
 
-```
+```python
 def checkValidGrid(grid: list[list[int]], i_x, i_y, starting_val) -> bool:
 ```
 
 Let's try to get it all.
 
-```
+```python
 _VALID_MOVES: list[tuple[int, int]] = [(0, 1),(1, 0),(1, 1),(-1, -1),(0, -1),(-1, 0),(-1, 1),(1, -1)]
 
 
