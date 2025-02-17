@@ -18,16 +18,92 @@ Then let's find a way to keep track of these counts on the first pass and then b
 
 ```javascript
 s = 'raabacaf'
-counts = []
-count = 0
 map = {}
-
 
 for (let i of s) {
 	map[i] = map[i] ? map[i] + 1 : 1
-    //
+    // console.log(map)
+    // -> {'r':1}
+    // -> {'r':1,'a':1}
+    // -> {'r':1,'a':2}
+    // -> {'r':1,'a':2,'b':1}
+    // -> {'r':1,'a':3,'b':1}.
+    // -> etc
 }
 ```
+
+So obviously during my challenge I immediately started doing calculations on the match here. The best thing to do is to leave what you calculated. Looking at all this info, I saw when looking at this afterwards I was keeping track of too much.
+
+```javascript
+s = 'raabacaf'
+counts = []
+for (let i of s) {
+	map[i] = map[i] ? map[i] + 1 : 1
+    counts.push(Object.keys(map).length)
+    // console.log(counts)
+    // -> [1]
+    // -> [1, 2]
+    // -> [1, 2, 2]
+    // -> [1, 2, 2, 3]
+    // -> [1, 2, 2, 3 ,3]
+    // -> etc
+}
+```
+
+So this sets us up to look at this in reverse. The trick is how do we go in reverse? This is a little easier in python. In JS:
+
+```javascript
+s = 'raabacaf'
+for (let i = s.length - 1; i >= 0; i--) {
+    // console.log(i, s[i])
+    // -> 7 f
+    // -> 6 a
+    // -> 5 c
+    // -> etc
+}
+```
+
+So this is good. Now we just need to keep track of character count again.
+
+```javascript
+s = 'raabacaf'
+
+// -------------
+
+map = {}
+for (let i = s.length - 1; i >= 0; i--) {
+	map[s[i]] = map[s[i]] ? map[s[i]] + 1 : 1
+    counts.push(Object.keys(map).length)
+    // console.log(map)
+    // ->                   [1]
+    // ->                [2, 1]
+    // ->             [3, 2, 1]
+    // ->          [3, 3, 2, 1]
+    // ->       [4, 3, 3, 2, 1]
+    // ->    [4, 4, 3, 2, 2, 1]
+    // -> [4, 4, 4, 3, 2, 2, 1]
+    // -> etc
+}
+```
+
+I am showing this backwards to help visual this. This is also too much info. We don't need to keep track of these, we just need to compare them to the array we kept!
+
+```javascript
+count = 0
+
+// -------------
+
+map = {}
+for (let i = s.length - 1; i >= 0; i--) {
+		map[s[i]] = map[s[i]] ? map[s[i]] + 1 : 1
+    if (Object.keys(map).length == counts[i - 1]) {
+        // This is all the info we wanted!
+    	count+=1
+    }
+}
+```
+
+We don't need detail on char counts, we don't need the letters themselves. Read that question and do as little work as possible. Leverage the limitations of the problem, because otherwise you will end up with too high a complexity, space or algorithmically, and / or you will run out of time. Here's it all together.
 
 ```javascript
 s = 'raabacaf'
@@ -35,11 +111,12 @@ counts = []
 count = 0
 map = {}
 
-
 for (let i of s) {
 	map[i] = map[i] ? map[i] + 1 : 1
     counts.push(Object.keys(map).length)
 }
+
+// -> [1, 2, 2, 3, 3, 4, 4, 5]
 
 map = {}
 for (let i = s.length - 1; i >= 0; i--) {
@@ -48,6 +125,8 @@ for (let i = s.length - 1; i >= 0; i--) {
     	count+=1
     }
 }
+
+console.log(count) // -> 2
 ```
 
 {:refdef: style="text-align: center;"}
