@@ -30,8 +30,7 @@ That's a different problem! King's even easier.
 {: refdef}
 
 ```python
-LEGAL_MOVES: list[tuple(int, int)] = 
-[(1,1),(-1,1),(1,-1),(-1,-1),(1,1),(-1,1),(1,-1),(-1,-1)]
+LEGAL_MOVES: list[tuple(int, int)] = [(0, 1),(1, 0),(1, 1),(-1, -1),(0, -1),(-1, 0),(-1, 1),(1, -1)]
 ```
 
 During the interview I pursued this as a if / else tree, which is terrible. A better way to do it I found afterwards.
@@ -93,7 +92,7 @@ def checkValidGrid(grid: list[list[int]], i_x, i_y, starting_val) -> bool:
 Let's try to get it all.
 
 ```python
-_VALID_MOVES: list[tuple[int, int]] = [(0, 1),(1, 0),(1, 1),(-1, -1),(0, -1),(-1, 0),(-1, 1),(1, -1)]
+LEGAL_MOVES: list[tuple[int, int]] = [(0, 1),(1, 0),(1, 1),(-1, -1),(0, -1),(-1, 0),(-1, 1),(1, -1)]
 
 
 def checkValidGrid(grid: list[list[int]], i_x, i_y, starting_val) -> bool:
@@ -109,7 +108,7 @@ def checkValidGrid(grid: list[list[int]], i_x, i_y, starting_val) -> bool:
             return True
           
         # Keep looking. i.e. 0 -> finding 1 -> finding 2, etc...
-        return any(is_valid(grid, x + dx, y + dy, expected_pos + 1) for dx, dy in _VALID_MOVES)
+        return any(is_valid(grid, x + dx, y + dy, expected_pos + 1) for dx, dy in LEGAL_MOVES)
 
     # Starting us off!
     return is_valid(grid, i_x, i_y, starting_val)
