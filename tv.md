@@ -12,4 +12,4 @@ At the moment, I am focusing at the moment on a project at based on my experienc
 
 I have had a host of dynamic and interesting experiences stemming primarily from being an immigrant and chosing to be in places where minority immigrants either aren't or aren't expected to have agency. 
 
-I'm working on other ideas involving my experiences as a petroleum engineer in Bakersfield, being laid off by (F)Elon Musk at Twitter prior to him doing that to all government workers, my time as a factory farm engineer across the United States, being born and greatly influenced by being born in Malaysia as a racial minority under a quota system and of course, my pelicular hometown, Victorville.
+I'm working on other ideas involving my experiences as a petroleum engineer in Bakersfield, being laid off at Twitter during the purge, my time as a factory farm engineer across the United States, being born and greatly influenced by being born in Malaysia as a racial minority under a quota system and of course, my pelicular hometown, Victorville.
