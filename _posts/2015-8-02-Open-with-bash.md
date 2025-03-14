@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open with bash
+title: open with bash
 ---
 
 There are many obvious benefits to working your computer from the terminal. I've been experimenting with opening tabs and running chains of commands from the terminal. Here's a command to do exactly this.

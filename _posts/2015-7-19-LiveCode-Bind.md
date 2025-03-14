@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LiveCode Bind
+title: livecode bind
 ---
 
 In my few weeks in Telegraph Academy, I've discovered I learn best from live coding and I want to bring some of that feel to my blog. <a href="https://en.wikipedia.org/wiki/Live_coding" target="_blank">Live coding</a> is a programming practice centered on the use of improvising interactive programming, there are live websites with many free, live tutorials and others simply challenging them to build something in a short period of time. <br /><br /> One reason I find them valuable is unlike slides, contrived exercises or doing the problem on your own, the live-coder puts on a show and gives me a chance to see an idea take shape. It also gives me confidence knowing that a quote-enquote professional programmer also makes typos, forgets keywords, and needs a moment to look at documentation. Finally, live coding also helps me establish patterns to look for and makes practical and succinct examples. <br /><br />For example, I have been struggling with the concept of **call**, **apply**, and **bind** and a live coding session in class went a long way towards demistifying it for me. Here's an expanded look at it! Open your console and try this out: <br />

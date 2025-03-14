@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bash beginnings
+title: bash beginnings
 ---
 The Command Key (⌘) & Shortcuts and Development tools.
 
