@@ -11,7 +11,7 @@ strings = ["blast","blow","black"]
 # -> "bl"
 ```
 
-my first approach at this was from the front, i.e. i = 0 and climbing. This is tricky because not all the strings have the same length. Therefore, take a portion from the whole and reduce from that full length. Lots of these iteration problems will either be measure all against a separate variable, or selection on from within. In this case, we should look at strings[0] and compare to strings[1:] (the rest)
+My first approach at this was from the front, i.e. i = 0 and climbing. This is tricky because not all the strings have the same length. Therefore, take a portion from the whole and reduce from that full length. Lots of these iteration problems will either be measure all against a separate variable, or selection on from within. In this case, we should look at strings[0] and compare to strings[1:] (the rest)
 
 ```python
 prefix = strings[0]
@@ -29,7 +29,7 @@ prefix = prefix[:-1]
 prefix_length -= 1
 prefix = prefix[0:prefix_length]
 ```
-You can save a line and be more idiomatic. Even through I said I hate the syntax it is more space efficient. The other keys are iterating through strings but also using a while loop to check each prefix versus the string
+You can save a line and be more idiomatic. Even though I said I hate the syntax it is more space efficient. The other keys are iterating through strings but also using a while loop to check each prefix versus the string
 
 ```python
 prefix = strings[0]
