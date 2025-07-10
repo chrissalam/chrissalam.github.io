@@ -80,6 +80,7 @@ permalink: /fifty/
 ###### 13.8 Cars should be running on vegetable oil and batteries by now. I'm pissed.
 ###### 13.9 What a powerful post. I think at this point in time, I'm comfortable with starting a higher degree, and keeping this ideas inside. It's hard to do everything. That's why I'm getting a doctorate. I want the authority to fix my portion of the world at least.
 ###### 13.99 I still love this post. This will always be the longest post in this blog and I love how I'm starting to work towards some of these goals.
+###### 13.999 Firmly a tech worker now but I am inspired to build things that help people and find information they need still.
 
 ## 14.0 I usually own more than 15 bicycles. 14.1 I have always loved transportation and I am a closet-business minded person.
 ###### 14.2 I have sold bikes in Davis, and some of your friends probably are riding on some of them.
@@ -147,16 +148,16 @@ permalink: /fifty/
 ###### 33.1 Chong's got a point with american culture, and I hate to validate him: The culture pervades all of this, from the required valentines day celebrations, through proms and what not.
 ###### 33.2 I 've spent two years in a long relationship. It's really humbling, the afterwards of it. I don't want to make the same mistakes. 
 
-## 34.0 I detest Objectivism. 34.1 My friend who used to believe in this is no longer. I was so happy when I found out.
+## 34.0 I detest Objectivism. If you are into it, happy to discuss though.
 
 ## 35.0 I will spend the rest of my life doing things that are helpful.
 ###### 35.1 This used to say I will spend the rest of my life in the Ivory Tower.
 
 ## 36.0 I hate very few things.
-## 37.0 My idea of a dream woman is a blank canvas.
+## 37.0 My idea of a dream partner is a blank canvas.
 ###### 37.1 The more I think about it, there's no such thing. Lately, I've been more comfortable with finding all I require regardless of how many people it takes. 
 
-## 38.0 I despise disney, walmart, and most corporations that are nearing the ability to achieve monopoly. 
+## 38.0 I despise amazon, disney, walmart, and most corporations that are nearing the ability to achieve monopoly. 
 
 ## 39.0 We used to film movies in our backyard.
 

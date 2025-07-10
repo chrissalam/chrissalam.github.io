@@ -7,7 +7,7 @@ This is one of those questions where you can immediately tell there are many "ex
 
 Obviously if you sort the array and then iterate to the kth element, you have an nlogn solution.
 
-```
+```python
 def findKthLargest(self, nums: List[int], k: int) -> int:
         nums.sort(reverse=True)
         return nums[k - 1]
@@ -23,7 +23,7 @@ Additionally, you probably need an additional data structure but we can inately 
 
 So to solve without sorting, we must iterate through and create a data structure that updates itself and can removes values below the minumum and keeps values that are at k threshold or higher. Our heapq which is a minimum queue by default, does that, and we discard the values we don't need. The root of the tree (or the top of the heap?) is heap[0]. Any other solution would be less efficient because the data structure itself does the sorting needed to do this problem.
 
-```
+```python
 import heapq
 
 def findKthLargest(self, nums: List[int], k: int) -> int:
@@ -35,7 +35,7 @@ Yep. This is going to get gnarly. Having transitioned from javascript to python 
 
 Heapq is a minimum heap by default. heapq.heappop will remove values and create the new below k minimum we need at the root of our data structure (top of heap or root of tree), and heapq.heappush will help us bring in new values and place them at the appropriate layer. we will also still have to iterate through the list.
 
-```
+```python
 import heapq
 
 def findKthLargest(self, nums: List[int], k: int) -> int:
@@ -48,7 +48,7 @@ def findKthLargest(self, nums: List[int], k: int) -> int:
 
 heaps are initialized with []. So our logic is sort stuff in the heap and then trim the heap.
 
-```
+```python
 import heapq
 
 def findKthLargest(self, nums: List[int], k: int) -> int:
